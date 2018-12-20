@@ -8,7 +8,7 @@ This repo support pytorch 1.0, which uses a more convinient C++ and Cuda exntesi
 
 ## Todo list
 
-- [] Benchmark the performance on object detection ([faster r-cnn](https://github.com/jwyang/faster-rcnn.pytorch)).
+- [ ] Benchmark the performance on object detection ([faster r-cnn](https://github.com/jwyang/faster-rcnn.pytorch)).
 
 ## Compilation
 
