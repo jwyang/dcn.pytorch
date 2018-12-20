@@ -2,8 +2,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
+import pdb
 
-from modules import ConvOffset2d
+if torch.__version__ != '1.0.0':
+    from modules import ConvOffset2d
+else:
+    from dcn import ConvOffset2d
 
 num_deformable_groups = 2
 
@@ -25,6 +29,8 @@ conv_offset2d = ConvOffset2d(
     stride=1,
     padding=1,
     num_deformable_groups=num_deformable_groups).cuda()
+
+pdb.set_trace()
 
 inputs = Variable(torch.randn(N, inC, inH, inW).cuda())
 offset = conv(inputs)
