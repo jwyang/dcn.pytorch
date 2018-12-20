@@ -1,15 +1,29 @@
-# Deformable Convolutional Networks in PyTorch
-This repo is an implementation of [Deformable Convolution](https://arxiv.org/abs/1703.06211).
-Ported from author's MXNet [implementation](https://github.com/msracver/Deformable-ConvNets).
+# Introduction
 
-# Build
+This repo is a pytorch implementation of [Deformable Convolution Networks](https://arxiv.org/abs/1703.06211). It is ported from a previous pytorch [implemetnation](https://github.com/1zb/deformable-convolution-pytorch), which is transformed from original MXNet [implementation](https://github.com/msracver/Deformable-ConvNets).
+
+## What's the difference from other implementations?
+
+This repo support pytorch 1.0, which uses a more convinient C++ and Cuda exntesion tools [ATen](https://github.com/zdevito/ATen). 
+
+## Compilation
+
+### Build Pytorch-0.4 version
 
 ```
 sh make.sh
 CC=g++ python build.py
 ```
 
+### Build Pytorch-1.0 version
+
+```
+python setup.py build develop
+```
+
 See `test.py` for example usage.
 
 ### Notice
 Only `torch.cuda.FloatTensor` is supported.
+
+
