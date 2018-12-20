@@ -4,7 +4,7 @@ This repo is a pytorch implementation of [Deformable Convolution Networks](https
 
 ## What's the difference from other implementations?
 
-This repo support pytorch 1.0, which uses a more convinient C++ and Cuda exntesion tools [ATen](https://github.com/zdevito/ATen). 
+This repo supports Pytorch 1.0, which uses a more convinient C++ and Cuda exntesion tools [ATen](https://github.com/zdevito/ATen). 
 
 ## Todo list
 
