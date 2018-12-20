@@ -6,7 +6,17 @@ This repo is a pytorch implementation of [Deformable Convolution Networks](https
 
 This repo support pytorch 1.0, which uses a more convinient C++ and Cuda exntesion tools [ATen](https://github.com/zdevito/ATen). 
 
+## Todo list
+
+- [] Benchmark the performance on object detection ([faster r-cnn](https://github.com/jwyang/faster-rcnn.pytorch)).
+
 ## Compilation
+
+### Prerequiestes
+
+* Python 2.7 or 3.6
+* Pytorch 0.4 or Pytorch 1.0
+* CUDA 8.0 or higher
 
 ### Build Pytorch-0.4 version
 
